@@ -1,21 +1,78 @@
 body {
-    background-color: gray;
-    font-family: "Inter", sans-serif;
-}
-
-.container {
-    width: 430px;
-    height: 932px;
-    background-color: #F9F5F4;
-    margin: auto;
+  background-color: gray;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .todo {
-    
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  height: 932px;
+  background-color: #f9f5f4;
 }
 
-.todo h2 {
-
+.frame {
+  display: flex;
+  flex-direction: column;
+  width: 386px;
+  height: 789px;
+  align-self: center;
 }
 
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
 
+.input {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-field {
+  width: 297px;
+  padding: 21px;
+  background-color: #f3efee;
+  border: #f9f5f4;
+  border-radius: 12px;
+}
+
+::placeholder {
+  color: #222222;
+  font-size: 18px;
+}
+
+#addBtn {
+  width: 77px;
+  color: white;
+  background-color: #393433;
+  border: #f9f5f4;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+.counter {
+  width: 386px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+}

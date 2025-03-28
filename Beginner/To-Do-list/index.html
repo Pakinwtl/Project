@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js" defer></script>
     <title>To-do-list-app</title>
-</head>
-<body>
-    <div class="container">
-        <div class="todo">
-            <h2>Important</h2>
+  </head>
+  <body>
+    <section class="todo">
+      <div class="frame">
+        <h2>To-do list</h2>
+        <div class="input">
+          <input
+            type="text"
+            placeholder="Write a task..."
+            class="input-field"
+            id="todoInput"
+          />
+          <button id="addBtn">Add</button>
         </div>
-    </div>
-</body>
+        <ul class="list">
+          <li id="todoList">
+            <p class="task"><input type="checkbox" class="check" /> Task 1</p>
+          </li>
+        </ul>
+        <div class="footer">
+          <hr class="counter" />
+          <div class="footer-content">
+            <p><span id="todoCount">0</span> tasks left</p>
+            <button id="deleteBtn">Delete All</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
