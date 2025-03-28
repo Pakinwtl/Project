@@ -76,3 +76,11 @@ li {
   display: flex;
   flex-direction: column;
 }
+
+#todoList p {
+  display: flex;
+}
+
+.isDone {
+  text-decoration: line-through;
+}
