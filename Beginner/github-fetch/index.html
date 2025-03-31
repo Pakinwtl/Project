@@ -7,5 +7,16 @@
     <script src="script.js" defer></script>
     <title>git-hub-fetch</title>
   </head>
-  <body></body>
+  <body>
+    <section class="container">
+      <h2>GitHub Fetch</h2>
+      <form>
+        <input type="text" id="username" placeholder="Enter GitHub username" />
+        <button id="search-button" type="button" onclick="fetchGithubprofile()">
+          Fetch Repositories
+        </button>
+        <div id="profile"></div>
+      </form>
+    </section>
+  </body>
 </html>
